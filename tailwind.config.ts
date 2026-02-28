@@ -12,9 +12,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"DM Serif Display"', 'serif'],
-        head: ['"Syne"', 'sans-serif'],
-        body: ['"DM Sans"', 'sans-serif'],
+        display: ['"Nunito Sans"', 'sans-serif'],
+        head: ['"Nunito Sans"', 'sans-serif'],
+        body: ['"Nunito Sans"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

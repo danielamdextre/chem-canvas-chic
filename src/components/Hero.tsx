@@ -14,17 +14,17 @@ const Hero = () => {
           🌿 {t('Profesora de Química · Barcelona', 'Chemistry Tutor · Barcelona')}
         </div>
 
-        <h1 className="font-display text-[clamp(2.6rem,4.5vw,4.2rem)] font-normal leading-[1.08] text-foreground mb-5 tracking-tight">
+        <h1 className="font-display text-[clamp(2.6rem,4.5vw,4.2rem)] leading-[1.08] text-foreground mb-5 tracking-tight">
           {t(
-            <>Química que<br /><em className="italic text-primary">entenderás</em><br />de verdad</>,
-            <>Chemistry you'll<br /><em className="italic text-primary">truly</em><br />understand</>
+            <>Química que<br /><span className="text-primary">entenderás</span><br />de verdad</>,
+            <>Chemistry you'll<br /><span className="text-primary">truly</span><br />understand</>
           )}
         </h1>
 
-        <p className="text-[0.98rem] font-light text-muted-foreground leading-relaxed max-w-[400px] mb-6">
+        <p className="text-[0.98rem] text-muted-foreground leading-relaxed max-w-[400px] mb-6">
           {t(
-            'Clases personalizadas para ESO y Bachillerato — online o presencial en Barcelona. Aprende química conectada a la vida real.',
-            'Personalised lessons for secondary and A-levels — online or in-person in Barcelona. Chemistry connected to real life.'
+            'Clases personalizadas para ESO y Bachillerato — online o presencial en Barcelona.',
+            'Personalised lessons for secondary and A-levels — online or in-person in Barcelona.'
           )}
         </p>
 
@@ -52,14 +52,6 @@ const Hero = () => {
             {t('Ver servicios →', 'See services →')}
           </a>
         </div>
-
-        <div className="mt-5 text-[0.75rem] text-ink-25 flex items-center gap-3 flex-wrap">
-          <span>✅ {t('Clase de valoración gratis', 'Free assessment class')}</span>
-          <span className="w-[3px] h-[3px] rounded-full bg-green-100" />
-          <span>⚡ {t('Respondo en <24h', 'Reply <24h')}</span>
-          <span className="w-[3px] h-[3px] rounded-full bg-green-100" />
-          <span>🔒 {t('Sin compromiso', 'No commitment')}</span>
-        </div>
       </div>
 
       {/* Right */}
@@ -80,7 +72,7 @@ const Hero = () => {
           <div className="font-head text-[0.52rem] font-semibold tracking-widest uppercase text-primary mb-0.5">
             🎓 {t('Formación', 'Background')}
           </div>
-          <div className="font-head text-[0.82rem] font-bold text-foreground">Ing. UNALM · Lima</div>
+          <div className="font-head text-[0.82rem] font-bold text-foreground">Ing. UNALM</div>
         </div>
         <div className="absolute bottom-[19%] right-[4%] bg-background/88 backdrop-blur-lg border border-background/70 rounded-lg px-4 py-3 shadow-xl z-20 animate-float-delayed">
           <div className="font-head text-[0.52rem] font-semibold tracking-widest uppercase text-primary mb-0.5">

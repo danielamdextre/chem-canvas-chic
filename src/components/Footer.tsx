@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-foreground px-6 md:px-12 lg:px-16 py-6 flex justify-between items-center flex-wrap gap-4">
       <div className="font-head text-sm font-bold text-primary-foreground/50">
-        Daniela <em className="font-display not-italic font-normal text-primary-foreground/25">Meléndez</em>
+        Daniela <span className="font-normal text-primary-foreground/25">Meléndez</span>
       </div>
       <p className="font-head text-[0.52rem] tracking-widest uppercase text-primary-foreground/20">
         © 2025 — {t('Todos los derechos reservados', 'All rights reserved')}

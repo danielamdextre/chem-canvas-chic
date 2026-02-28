@@ -27,8 +27,8 @@ const HowItWorks = () => {
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-16 items-start">
         <div className="lg:sticky lg:top-28">
           <SectionEyebrow>{t('¿Cómo funciona?', 'How it works')}</SectionEyebrow>
-          <h2 className="font-display text-[clamp(2rem,3vw,2.8rem)] font-normal text-foreground leading-[1.12] mb-4">
-            {t(<>Empezar<br />es <em className="italic text-primary">muy fácil</em></>, <>Starting is<br /><em className="italic text-primary">very easy</em></>)}
+          <h2 className="font-display text-[clamp(2rem,3vw,2.8rem)] text-foreground leading-[1.12] mb-4">
+            {t(<>Empezar es <span className="text-primary">muy fácil</span></>, <>Starting is <span className="text-primary">very easy</span></>)}
           </h2>
           <p className="text-[0.88rem] text-muted-foreground leading-relaxed">
             {t('Sin formularios complicados. Solo mándame un mensaje y en menos de 24h hablamos.', 'No complicated forms. Just send me a message and we\'ll talk within 24h.')}

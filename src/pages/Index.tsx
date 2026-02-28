@@ -7,7 +7,7 @@ import Services from '@/components/Services';
 import About from '@/components/About';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
-import CTASection from '@/components/CTASection';
+
 import Footer from '@/components/Footer';
 import WhatsAppFab from '@/components/WhatsAppFab';
 
@@ -22,7 +22,7 @@ const Index = () => {
       <About />
       <Testimonials />
       <FAQ />
-      <CTASection />
+      
       <Footer />
       <WhatsAppFab />
     </LangProvider>

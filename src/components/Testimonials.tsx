@@ -28,15 +28,15 @@ const Testimonials = () => {
         <SectionEyebrow>
           <span className="mx-auto">{t('Testimonios', 'Testimonials')}</span>
         </SectionEyebrow>
-        <h2 className="font-display text-[clamp(2rem,3vw,2.8rem)] font-normal text-foreground leading-[1.12]">
-          {t(<>Lo que dicen mis <em className="italic text-primary">alumnos</em></>, <>What my <em className="italic text-primary">students</em> say</>)}
+        <h2 className="font-display text-[clamp(2rem,3vw,2.8rem)] text-foreground leading-[1.12]">
+          {t(<>Lo que dicen mis <span className="text-primary">alumnos</span></>, <>What my <span className="text-primary">students</span> say</>)}
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {testimonials.map((test, i) => (
           <div key={i} className="bg-snow border border-border rounded-xl p-7 transition-all hover:shadow-lg hover:border-green-100 hover:-translate-y-1">
             <div className="text-[0.75rem] text-primary mb-4 tracking-wider">★★★★★</div>
-            <p className="font-display italic text-base text-foreground leading-relaxed mb-5">{test.quote}</p>
+            <p className="text-base text-foreground leading-relaxed mb-5">{test.quote}</p>
             <div className="text-[0.76rem] text-muted-foreground">
               <strong className="block text-foreground font-head font-semibold text-[0.8rem] mb-0.5">{test.name}</strong>
               {test.info}

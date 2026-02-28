@@ -5,7 +5,7 @@ const StatsBar = () => {
   const stats = [
     { value: '+80', label: t('Alumnos', 'Students') },
     { value: '+5', label: t('Años exp.', 'Years exp.') },
-    { value: 'Lima — BCN', label: t('Internacional', 'International') },
+    { value: 'BCN', label: t('Barcelona', 'Barcelona') },
     { value: '5.0 ⭐', label: t('Valoración', 'Rating') },
   ];
 

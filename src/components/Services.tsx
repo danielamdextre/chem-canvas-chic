@@ -43,8 +43,8 @@ const Services = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end mb-10">
         <div>
           <SectionEyebrow>{t('Servicios', 'Services')}</SectionEyebrow>
-          <h2 className="font-display text-[clamp(2rem,3vw,2.8rem)] font-normal text-foreground leading-[1.12]">
-            {t(<>¿Qué nivel<br />es el tuyo?</>, <>What's your<br />level?</>)}
+          <h2 className="font-display text-[clamp(2rem,3vw,2.8rem)] text-foreground leading-[1.12]">
+            {t(<>¿Qué nivel es el <span className="text-primary">tuyo</span>?</>, <>What's <span className="text-primary">your</span> level?</>)}
           </h2>
         </div>
         <p className="text-[0.88rem] text-muted-foreground leading-relaxed">

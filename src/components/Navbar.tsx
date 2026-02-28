@@ -14,59 +14,55 @@ const Navbar = () => {
   }, []);
 
   return (
-    <>
-      {/* Language switcher */}
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 z-[600] flex items-center gap-1 bg-background/90 backdrop-blur-xl border border-border rounded-full px-2 py-1 mt-3 shadow-sm">
-        <button
-          onClick={() => setLang('es')}
-          className={`font-head text-[0.6rem] font-semibold tracking-widest uppercase px-2.5 py-1 rounded-full transition-all border-none cursor-pointer ${lang === 'es' ? 'bg-primary text-primary-foreground' : 'bg-transparent text-ink-25'}`}
+    <nav className={`fixed top-0 left-0 right-0 z-[500] px-6 md:px-12 py-4 flex justify-between items-center transition-all duration-400 ${solid ? 'bg-background/95 backdrop-blur-xl border-b border-border shadow-sm' : ''}`}>
+      <a href="#top" className="font-head text-base font-bold text-green-700 no-underline">
+        Daniela <span className="font-normal text-primary">Meléndez</span>
+      </a>
+      <div className="flex items-center gap-6">
+        <ul className="hidden md:flex gap-5 list-none items-center">
+          <li>
+            <a href="#servicios" className="font-head text-[0.78rem] font-medium text-ink-50 no-underline hover:text-primary hover:bg-accent px-2.5 py-1.5 rounded-full transition-colors">
+              {t('Servicios', 'Services')}
+            </a>
+          </li>
+          <li>
+            <a href="#sobre-mi" className="font-head text-[0.78rem] font-medium text-ink-50 no-underline hover:text-primary hover:bg-accent px-2.5 py-1.5 rounded-full transition-colors">
+              {t('Sobre mí', 'About')}
+            </a>
+          </li>
+          <li>
+            <a href="#faq" className="font-head text-[0.78rem] font-medium text-ink-50 no-underline hover:text-primary hover:bg-accent px-2.5 py-1.5 rounded-full transition-colors">
+              FAQ
+            </a>
+          </li>
+        </ul>
+        <a
+          href={WA_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-head text-[0.7rem] font-semibold tracking-wide bg-primary text-primary-foreground no-underline px-5 py-2.5 rounded-full transition-all hover:bg-green-700 hover:-translate-y-0.5 shadow-md inline-flex items-center gap-2"
         >
-          ES
-        </button>
-        <span className="text-[0.55rem] text-ink-10">·</span>
-        <button
-          onClick={() => setLang('en')}
-          className={`font-head text-[0.6rem] font-semibold tracking-widest uppercase px-2.5 py-1 rounded-full transition-all border-none cursor-pointer ${lang === 'en' ? 'bg-primary text-primary-foreground' : 'bg-transparent text-ink-25'}`}
-        >
-          EN
-        </button>
-      </div>
-
-      {/* Navigation */}
-      <nav className={`fixed top-0 left-0 right-0 z-[500] px-6 md:px-12 py-4 flex justify-between items-center transition-all duration-400 ${solid ? 'bg-background/95 backdrop-blur-xl border-b border-border shadow-sm' : ''}`}>
-        <a href="#top" className="font-head text-base font-bold text-green-700 no-underline">
-          Daniela <em className="font-display not-italic font-normal text-primary">Meléndez</em>
+          <WhatsAppIcon size={13} />
+          {t('Contactar', 'Contact')}
         </a>
-        <div className="flex items-center gap-6">
-          <ul className="hidden md:flex gap-5 list-none items-center">
-            <li>
-              <a href="#servicios" className="font-head text-[0.78rem] font-medium text-ink-50 no-underline hover:text-primary hover:bg-accent px-2.5 py-1.5 rounded-full transition-colors">
-                {t('Servicios', 'Services')}
-              </a>
-            </li>
-            <li>
-              <a href="#sobre-mi" className="font-head text-[0.78rem] font-medium text-ink-50 no-underline hover:text-primary hover:bg-accent px-2.5 py-1.5 rounded-full transition-colors">
-                {t('Sobre mí', 'About')}
-              </a>
-            </li>
-            <li>
-              <a href="#faq" className="font-head text-[0.78rem] font-medium text-ink-50 no-underline hover:text-primary hover:bg-accent px-2.5 py-1.5 rounded-full transition-colors">
-                FAQ
-              </a>
-            </li>
-          </ul>
-          <a
-            href={WA_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-head text-[0.7rem] font-semibold tracking-wide bg-primary text-primary-foreground no-underline px-5 py-2.5 rounded-full transition-all hover:bg-green-700 hover:-translate-y-0.5 shadow-md inline-flex items-center gap-2"
+        {/* Language switcher - far right */}
+        <div className="flex items-center gap-1 bg-background/90 backdrop-blur-xl border border-border rounded-full px-2 py-1">
+          <button
+            onClick={() => setLang('es')}
+            className={`font-head text-[0.6rem] font-semibold tracking-widest uppercase px-2.5 py-1 rounded-full transition-all border-none cursor-pointer ${lang === 'es' ? 'bg-primary text-primary-foreground' : 'bg-transparent text-ink-25'}`}
           >
-            <WhatsAppIcon size={13} />
-            {t('Contactar', 'Contact')}
-          </a>
+            ES
+          </button>
+          <span className="text-[0.55rem] text-ink-10">·</span>
+          <button
+            onClick={() => setLang('en')}
+            className={`font-head text-[0.6rem] font-semibold tracking-widest uppercase px-2.5 py-1 rounded-full transition-all border-none cursor-pointer ${lang === 'en' ? 'bg-primary text-primary-foreground' : 'bg-transparent text-ink-25'}`}
+          >
+            EN
+          </button>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
 
