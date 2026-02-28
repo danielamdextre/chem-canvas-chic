@@ -6,12 +6,12 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      quote: t('"Llevaba dos años suspendiendo química. Con Daniela empecé a entender de verdad y saqué un 7,5 en la Selectividad."', '"I\'d been failing chemistry for two years. With Daniela I started to really understand and scored 7.5 in my entrance exam."'),
+      quote: t('"Llevaba perdido en la materia. Con Daniela empecé a entender de verdad y aprobé todos mis examenes de ese semestre que me enseñó."', '"I was lost in the course. With Daniela, I began to truly understand and passed all my exams that semester. "'),
       name: 'Marc T.',
       info: t('2º Bach · Barcelona', 'A-levels · Barcelona'),
     },
     {
-      quote: t('"Siempre explica el porqué, nunca solo la fórmula. Las clases online son igual de buenas que en persona."', '"She always explains the why, never just the formula. Online classes are just as good as in person."'),
+      quote: t('"Siempre explica el porqué y da el contexto de cada tema, nunca solo la fórmula. Las clases online son igual de buenas que en persona."', '"She always explains the why, never just the formula. Online classes are just as good as in person."'),
       name: 'Sofía R.',
       info: t('3º ESO · Online', 'Year 9 · Online'),
     },
