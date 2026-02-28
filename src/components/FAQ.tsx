@@ -34,8 +34,8 @@ const FAQ = () => {
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-12 lg:gap-16 items-start">
         <div className="lg:sticky lg:top-28">
           <SectionEyebrow>FAQ</SectionEyebrow>
-          <h2 className="font-display text-[clamp(2rem,3vw,2.8rem)] font-normal text-foreground leading-[1.12] mb-3">
-            {t(<>Preguntas<br /><em className="italic text-primary">frecuentes</em></>, <>Frequently<br /><em className="italic text-primary">asked</em></>)}
+          <h2 className="font-display text-[clamp(2rem,3vw,2.8rem)] text-foreground leading-[1.12] mb-3">
+            {t(<>Preguntas <span className="text-primary">frecuentes</span></>, <>Frequently <span className="text-primary">asked</span></>)}
           </h2>
           <p className="text-[0.86rem] text-muted-foreground leading-relaxed mb-6">
             {t('¿No encuentras lo que buscas? Escríbeme directamente.', "Can't find what you're looking for? Message me directly.")}

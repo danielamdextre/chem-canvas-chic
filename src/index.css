@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800&1,6..12,300;1,6..12,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -89,8 +89,8 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
     line-height: 1.65;
     overflow-x: hidden;
   }
@@ -111,13 +111,14 @@
 
 @layer utilities {
   .font-display {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
   }
   .font-head {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .font-body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
   }
 }
 
