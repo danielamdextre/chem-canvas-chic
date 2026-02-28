@@ -31,44 +31,44 @@ const About = () => {
         </div>
 
         {/* Text - right */}
-        <div>
-          <SectionEyebrow>{t('Sobre mí', 'About me')}</SectionEyebrow>
+<div>
+  <SectionEyebrow>{t('Sobre mí', 'About me')}</SectionEyebrow>
 
-          <h2 className="font-display text-[clamp(2rem,3vw,2.8rem)] text-foreground leading-[1.12] mb-1">
-            {t(
-              <>Hola, soy <span className="text-primary">Daniela</span></>,
-              <>Hi, I'm <span className="text-primary">Daniela</span></>
-            )}
-          </h2>
+  <h2 className="font-display text-[clamp(2rem,3vw,2.8rem)] text-foreground leading-[1.12] mb-1">
+    {t(
+      <>Hola, soy <span className="text-primary">Daniela</span></>,
+      <>Hi, I'm <span className="text-primary">Daniela</span></>
+    )}
+  </h2>
 
-          <p className="text-lg text-muted-foreground mb-5">
-            {t(
-              'Ingeniera que enseña química con el contexto que cambia cómo la entiendes.',
-              'An engineer who teaches chemistry with the context that changes how you understand it.'
-            )}
-          </p>
+  <p className="text-lg text-muted-foreground mb-5">
+    {t(
+      'Ingeniera que enseña química desde la estructura, no desde la memoria.',
+      'An engineer who teaches chemistry from structure, not memorisation.'
+    )}
+  </p>
 
-          <p className="text-[0.88rem] text-muted-foreground leading-relaxed mb-5">
-            {t(
-              'Llevo más de 5 años dando clases particulares de química, actualmente en Barcelona. He acompañado a más de 80 estudiantes a pasar de "no entiendo nada" a aprobar con confianza.',
-              'I\'ve been giving private chemistry lessons for over 5 years, currently in Barcelona. I\'ve helped 80+ students go from "I don\'t get it" to passing with confidence.'
-            )}
-          </p>
+  <p className="text-[0.88rem] text-muted-foreground leading-relaxed mb-5">
+    {t(
+      'Desde el colegio siempre quise entender cómo funcionan las cosas por dentro. No me bastaba con aplicar una fórmula; necesitaba comprender el porqué. Esa misma forma de aprender es la que hoy intento transmitir.\n\nEstudié Ingeniería en la UNALM (Perú) y descubrí que muchos alumnos no fallan en química por falta de capacidad, sino por falta de contexto.\n\nLlevo más de 5 años dando clases particulares y he acompañado a más de 80 estudiantes a pasar de "no entiendo nada" a aprobar con confianza.',
+      'Since school, I always wanted to understand how things work from the inside. Applying a formula was never enough — I needed to understand why. That same way of learning is what I try to pass on today.\n\nI studied Engineering at UNALM (Peru) and realised that many students do not struggle with chemistry because of lack of ability, but because of lack of context.\n\nI have been giving private lessons for over 5 years and have helped more than 80 students go from "I don’t get it" to passing with confidence.'
+    )}
+  </p>
 
-          <div className="flex flex-col gap-2 mt-5">
-            {[
-              t('Ingeniería — UNALM, Perú', 'Engineering — UNALM, Peru'),
-              t('+5 años enseñando química', '5+ years teaching chemistry'),
-              t('+80 alumnos de ESO y Bachillerato', '80+ students, secondary and A-levels'),
-              t('Online y presencial en Barcelona', 'Online and in-person in Barcelona'),
-            ].map((cred, i) => (
-              <div key={i} className="flex items-center gap-3 text-[0.83rem] text-muted-foreground">
-                <span className="w-1 h-1 rounded-full bg-green-300 flex-shrink-0" />
-                {cred}
-              </div>
-            ))}
-          </div>
-        </div>
+  <div className="flex flex-col gap-2 mt-5">
+    {[
+      t('Ingeniería — UNALM, Perú', 'Engineering — UNALM, Peru'),
+      t('+5 años enseñando química', '5+ years teaching chemistry'),
+      t('+80 alumnos de ESO y Bachillerato', '80+ students, secondary and A-levels'),
+      t('Online y presencial en Barcelona', 'Online and in-person in Barcelona'),
+    ].map((cred, i) => (
+      <div key={i} className="flex items-center gap-3 text-[0.83rem] text-muted-foreground">
+        <span className="w-1 h-1 rounded-full bg-green-300 flex-shrink-0" />
+        {cred}
+      </div>
+    ))}
+  </div>
+</div>
 
       </div>
     </section>
