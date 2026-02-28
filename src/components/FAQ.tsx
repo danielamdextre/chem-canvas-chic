@@ -8,20 +8,16 @@ const FAQ = () => {
 
   const faqs = [
     {
-      q: t('¿La primera clase es gratis?', 'Is the first class free?'),
-      a: t('Sí. La primera sesión es una valoración sin coste donde evalúo tu nivel, entiendo qué necesitas y te propongo un plan. Sin compromiso.', 'Yes. The first session is a free assessment where I evaluate your level, understand your needs and propose a plan. No commitment.'),
-    },
-    {
       q: t('¿Cómo funcionan las clases online?', 'How do online classes work?'),
       a: t('Por videollamada (Google Meet, Zoom o el que prefieras), pizarra digital compartida y materiales en tiempo real. Igual de efectivo que presencial.', 'Via video call (Google Meet, Zoom or your choice), shared digital whiteboard and real-time materials. Just as effective as in person.'),
     },
     {
       q: t('¿Cuánto cuestan las clases?', 'How much do classes cost?'),
-      a: t('El precio depende del nivel y la modalidad. Escríbeme y te lo digo en seguida, sin rodeos.', 'Pricing depends on level and format. Message me and I\'ll tell you straightaway, no fuss.'),
+      a: t('El precio depende del nivel y la modalidad. Escríbeme y te lo digo en seguida.', 'Pricing depends on level and format. Message me and I\'ll tell you straightaway.'),
     },
     {
       q: t('¿Das clases a domicilio en Barcelona?', 'Do you offer home visits in Barcelona?'),
-      a: t('Sí, me desplazo dentro de Barcelona. También podemos quedar en biblioteca o espacio de estudio.', 'Yes, I travel within Barcelona. We can also meet at a library or study space.'),
+      a: t('Sí, me desplazo dentro de Barcelona. También podemos quedar en biblioteca, espacio de estudio o en una cafetería.', 'Yes, I travel within Barcelona. We can also meet at a library or study space.'),
     },
     {
       q: t('¿Puedo empezar en cualquier momento?', 'Can I start at any point in the year?'),
